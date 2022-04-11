@@ -1,0 +1,161 @@
+body{
+    background-color: #f9f9fa;
+}
+.main_container{
+    display: flex;
+    justify-content: flex-end;
+}
+/* .main_conatiner */
+
+.login_container{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.container{
+    margin: auto;
+    margin: 20px auto;
+    width: 500px;
+    /* height:110vh; */
+    background-color:rgb(255, 255, 255);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding-bottom: 15px;
+}
+.container_title{
+    height:75px;
+    background-color: #f9f9fa;
+    text-align:left;
+    /* display:flex;
+    align-items:center; */
+    position: relative;
+}
+.container_title>p{
+    position: absolute;
+    left: 18px;
+    /* top: 2%; */
+    font-size:22px;
+    /* margin-left: 5%; */
+}
+form{
+    /* padding-left: 8%; */
+}
+.project_div{
+    margin-left:5%
+}
+.project_label, .task_label, .billable_label{
+    margin-top: 6%;
+    text-align:left;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+}
+.project_label>span, .task_label>span{
+    color:red;
+}
+.project_input, .task_input, .billable_input {
+    text-align:left;
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgb(173, 172, 172);
+    background-color:#f4f4f4;
+    outline: none;
+    padding: 3%;
+    width: 86%;
+    margin-top: 2%;
+
+}
+
+.flex_box{
+    display:flex;
+    /* margin-top:1%; */
+    margin-bottom: 10%;
+    /* border: 1px solid black; */
+}
+
+.task_div{
+    width: 70%;
+    margin-left: 5%;
+    
+}
+
+.heading2{
+    text-align:left;
+    margin-left:4%
+}
+
+.task_label {
+    /* border: 1px solid green; */
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+}
+.task_input{
+    width:94%;
+}
+
+.billable_div{
+    width: 10%;
+    margin-left: 11%;
+}
+
+.billable_label{
+    display: block;
+    margin-top: 50%
+    
+
+}
+.billable_input{
+    border: 1px solid orange;
+    width:18px;
+    height:18px;
+    margin-top:20%;
+    margin-left: 0;
+    padding-left: 0
+}
+.buttons_div{
+    border-top: 1px solid rgb(207, 207, 207);
+    padding-top: 15px;
+    margin-top: 20px;
+    display: flex;
+    justify-content:space-evenly;
+}
+.cancel_button{
+
+}
+.add_button,.cancel_button{
+    width:43%;
+    border: 1px solid rgb(202, 202, 202);
+    padding: 10px 25px;
+    background-color:transparent
+}
+
+.add_button:disabled{
+    background-color:#c6c6c6
+}
+
+
+.cancel_button{
+    background: transparent
+}
+
+.task_container{
+    height:300px;
+    overflow-y: scroll;
+    
+}
+.task_container::-webkit-scrollbar {
+    opacity: 0;
+    width: 4px;
+    border-radius:20%;
+    background: transparent;
+}
+
+
+.task_container:hover::-webkit-scrollbar-thumb {
+    background: rgb(213, 211, 211);
+    border-radius:3px;
+    opacity: 1;
+}
